@@ -150,7 +150,7 @@ class MyBot(ActivityHandler):
     async def on_members_added_activity(self, members_added: List[ChannelAccount], turn_context: TurnContext):
         for member in members_added:
             if member.id != turn_context.activity.recipient.id:
-                await turn_context.send_activity("Welcome to the Databricks Genie Bot!")
+                await turn_context.send_activity("Hi! I’m Insight Studio X – your ultimate no-code engine for instant, in-chat data analysis. Get powerful, in-depth insights delivered straight to your team’s chat in minutes – not hours. No coding, no waiting – just pure, actionable insight. How can I help you today?")
 
 BOT = MyBot()
 
