@@ -151,7 +151,7 @@ class MyBot(ActivityHandler):
         for member in members_added:
             if member.id != turn_context.activity.recipient.id:
                 
-                await turn_context.send_activity("Hi! I’m Insight Studio X – your ultimate no-code engine for instant, in-chat data analysis. Get powerful, in-depth insights delivered straight to your team’s chat in minutes – not hours. No coding, no waiting – just pure, actionable insight. How can I help you today?")
+                # await turn_context.send_activity("Hi! I’m Insight Studio X – your ultimate no-code engine for instant, in-chat data analysis. Get powerful, in-depth insights delivered straight to your team’s chat in minutes – not hours. No coding, no waiting – just pure, actionable insight. How can I help you today?")
                 with open("BOT.png", "rb") as image_file:
                         image_data = base64.b64encode(image_file.read()).decode("utf-8")
     
